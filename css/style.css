@@ -138,7 +138,6 @@ ul{
     }
 
 
-
     .navbar-light .navbar-nav .nav-link::after{
         content:'' ;
         width: 0%;
@@ -161,4 +160,20 @@ ul{
 
 /* ===================
     navber css ends
+=================== */
+    #banner .bg1{
+        background: url(../images/banner1.png) no-repeat center / cover;
+    }
+
+/* ===================
+    banner css start
+=================== */
+
+
+
+
+
+
+/* ===================
+    banner css ends
 =================== */ 
