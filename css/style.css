@@ -95,6 +95,7 @@ ul{
         background:rgba(241, 241, 241, 0.2);
         padding: 10px 30px !important;
         transform:skewX(-35deg);
+        z-index: -1;
     }
 
 
@@ -161,13 +162,12 @@ ul{
 /* ===================
     navber css ends
 =================== */
-    #banner .bg1{
-        background: url(../images/banner1.png) no-repeat center / cover;
-    }
-
 /* ===================
     banner css start
 =================== */
+#banner .banner-slider .bg1{
+    background: url(../images/gymnasium.jpg) no-repeat center / cover;
+}
 
 
 
