@@ -1,6 +1,7 @@
 $(document).ready(function(){
     'use strict'
     //for banner-slider
+    
     $('.banner-slider').slick({
         dots: true,
         arrows: false,
@@ -12,8 +13,13 @@ $(document).ready(function(){
         arrows: false,
         slidesToShow: 3,
         slidesToScroll: 1,
-        autoplay: true,
+        autoplay: false ,
     });
+
+    //about video pop up
+
+    $('.venobox').venobox(); 
+
 
 
 

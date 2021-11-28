@@ -1,6 +1,7 @@
 :root{
     --brand:#e23e38;
     --cl-dark: #353535;
+    --cl-p: #777777;
     --ff1: 'Oswald', sans-serif;
     --ff2: 'Open Sans', sans-serif;
     --over6: rgba(0, 0, 0, 0.6 );
@@ -83,16 +84,22 @@ ul{
     font-size: 60px;
 }
 
+/* =======================================
+                font css ends
+/* ========================================== */
 
 
-/* ==========================
-    common css ends
+header h3{
+    color: var(--cl-dark);
+}
+
+
+/* =======================================
+                header css ends
 ==========================================*/
 
-
-
 .navbar{
-    background: rgba(53, 53, 53, 0.25);
+    background: rgba(35, 35, 35, 0.25);
     top: 30px;
     left: 0;
     z-index: 222;
@@ -337,27 +344,117 @@ ul{
         margin-right: 0;
     }
 
-    .banner-slider .slick-dots li
-
-
-
-
 
 /* =================== 
     banner css ends
 =================== */
 
+/* =================== 
+    about us start
+=================== */
+
+#about .about-video .about-overly{
+    background: var(--over6);
+}
+
+#about .about-video .about-overly i{
+    width: 48px;
+    height: 48px;
+    background: var(--brand);
+    color: var(--cl-dark);
+    font-size: 36px;
+    line-height: 48px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+#about{
+    padding-top: 80px;
+    padding-bottom: 80px;
+
+}
+#about .about-detail header img{
+    margin-top: -5px;
+
+}
+
+#about .about-detail p{
+    color: var(--cl-p);
+    line-height: 21px;
+    padding: 0 21px;
+}
+#about .about-detail p:first-of-type{
+    padding-top: 15px;
+    padding-bottom: 35px;
+}
+
+/* =================== 
+    about us ends
+=================== */
 
 /* ===============
-gallary-slider pratict
+gallary css  starts
 ======================= */
-
-.gallary-slider{
-    background: #79d80b;
+#gallery .gallery-bg{
+    background: url(../images/gallery-bg.jpg) no-repeat center / cover;
+    position: relative;
+    z-index: 1;
+    margin-top: 25px;
+    padding-top: 30px;
 }
 
-.gallary-slider img{
-    padding-right: 15px;
-    border-radius: 10px;
-
+#gallery .gallery-bg::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: var(--over8);
+    position: absolute;
+    inset: 0;
+    z-index: -1;
 }
+
+#gallery .gallery-bg .gallery-item{
+    margin-bottom: 30px;
+}
+
+#gallery .gallery-bg .gallery-item .gallery-overlay{
+    background: var(--overred);
+    border: 5px solid var(--overwhite);
+    transform: scale(.95);
+    visibility: hidden;
+    opacity: 0;
+    transition: all linear 0.4s;
+}
+
+#gallery .gallery-bg .gallery-item:hover .gallery-overlay{
+    opacity: 1;
+    visibility: visible;
+}
+
+#gallery .gallery-bg .gallery-item .gallery-overlay i{
+    color: #fff;
+    font-size: 30px;
+}
+
+/* .gallary-slider .slick-dots {
+    display: flex;
+    position: absolute;
+    left: 50%;
+    bottom: 15px;
+    transform: translate(-50%);
+}
+
+.gallary-slider .slick-dots li.slick-active{
+    border-color: var(--brand);
+    background: var(--brand);
+    transform: scale(1.3);
+}
+
+.gallary-slider .slick-dots li:last-of-type{
+    margin-right: 0;
+}
+
+
+.icon a{
+    color: var(--brand);
+} */
