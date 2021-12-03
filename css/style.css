@@ -2,6 +2,7 @@
     --brand:#e23e38;
     --cl-dark: #353535;
     --cl-p: #777777;
+    --cl-t: #555555;
     --ff1: 'Oswald', sans-serif;
     --ff2: 'Open Sans', sans-serif;
     --over6: rgba(0, 0, 0, 0.6 );
@@ -10,6 +11,9 @@
     --fover: rgba(0, 0, 0, 0.85 );
     --overred: rgba(226, 62, 56, 0.5);
     --overwhite: rgba(255, 255, 255, 0.5);
+    --twitter: #1da0f2;
+    --bg1: #ddd;
+    --bg2: #f1f1f1;
 } 
 
 *{
@@ -369,8 +373,8 @@ header h3{
 }
 
 #about{
-    padding-top: 80px;
-    padding-bottom: 80px;
+    padding-top: 75px;
+    padding-bottom: 75px;
 
 }
 #about .about-detail header img{
@@ -395,6 +399,10 @@ header h3{
 /* ===============
 gallary css  starts
 ======================= */
+#gallery{
+    padding-bottom: 75px;
+}
+
 #gallery .gallery-bg{
     background: url(../images/gallery-bg.jpg) no-repeat center / cover;
     position: relative;
@@ -436,25 +444,234 @@ gallary css  starts
     font-size: 30px;
 }
 
-/* .gallary-slider .slick-dots {
+
+/* ========================
+    our team starts
+=========================== */
+#team{
+    padding-bottom: 40px;
+}
+
+
+#team .team-member{
+    margin-top: 65px;
+    transition: all linear 0.4s;
+}
+
+#team .team-member:hover{
+    transform: translateY(-40px);
+
+}
+
+#team .team-member .card{
+    border-color: transparent !important;
+    transition: all linear 0.4s;
+} 
+
+#team .team-member:hover .card{
+    border-color: var(--bg1);
+}
+
+#team .team-member .team-image .team-overlay {
+    background: var(--overred);
+    border: 5px solid var(--overwhite);
+    transform: scale(.95);
+    visibility: hidden;
+    opacity: 0;
+    transition: all linear 0.4s;
+}
+
+#team .team-member:hover .team-image .team-overlay{
+    visibility: visible;
+    opacity: 1;
+}
+
+#team .team-member .team-image .team-overlay a{
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+#team .team-member .team-image .team-overlay a:last-of-type{
+    margin-bottom: 0;
+
+}
+#team .team-member .team-image .team-overlay i{
+    width: 30px;
+    height: 30px;
+    line-height:  30px;
+    text-align: center;
+    font-size: 16px;
+    transition: all linear 0.4s;
+}
+
+#team .team-member .team-image .team-overlay i:hover{
+    color: var(--twitter);
+}
+
+#team .team-member .card-body h5{
+    color: var(--cl-dark);
+}
+
+#team .team-member .card-body h6{
+    color: var(--cl-t);
+    margin-top: -5px;
+    margin-bottom: 10px !important;
+}
+
+#team .team-member .card-body .card-text{
+    color: var(--cl-p);
+    line-height: 18px;
+    padding: 0 11px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all linear 0.4s;
+}
+
+#team .team-member:hover .card-body .card-text{
+    visibility: visible;
+    opacity: 1;
+}
+/* ========================
+    our team css ends
+=========================== */
+
+/* ========================
+    testimonial css start
+=========================== */
+
+#testimonial .testimonial-bg {
+    background: url(../images/testimonial-bg.jpg) no-repeat center / cover;
+    position: relative; 
+    z-index: 1;
+    padding-top: 30px;
+    padding-bottom: 80px;
+    margin-top: 25px;
+} 
+
+#testimonial .testimonial-bg::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: var(--over8);
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+}
+
+#testimonial .testimonial-bg .testimonial-iteam{
+    margin-right: 30px;
+}
+
+#testimonial .testimonial-bg .testimonial-iteam .testimonial-parson-detail .ratings i{
+    color: var(--brand);
+    font-size: 14px;
+}
+
+#testimonial .testimonial-bg .testimonial-iteam .testimonial-text p{
+    line-height: 10px;
+}
+
+
+/* #testimonial .slick-dots{
     display: flex;
     position: absolute;
     left: 50%;
-    bottom: 15px;
-    transform: translate(-50%);
+    bottom: -60px;
+    transform: translateX(-50%);
+    padding-left: 0;
 }
 
-.gallary-slider .slick-dots li.slick-active{
+#testimonial .slick-dots li{
+    width: 15px;
+    height: 15px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+#testimonial .slick-dots li .slick-active{
+    border-color: var(--brand);
+    background: var(--brand);
+    transform: scale(1,2);
+}
+
+#testimonial .slick-dots li:last-child{
+    margin-right: 0;
+}
+
+#testimonial .slick-dots li button{
+    font-size: 0;
+    border: none;
+    outline: 0;
+}
+ */
+
+
+.testimonial-slider .slick-dots li button{
+    font-size: 0;
+    border: none;
+    outline: none;
+}
+
+.testimonial-slider .slick-dots li {
+    width: 16px;
+    height: 16px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    margin-right: 10px;
+    cursor: pointer;
+    position: relative;
+}
+
+.testimonial-slider .slick-dots {
+    display: flex;
+    position: absolute;
+    left: 50%;
+    bottom: -60px;
+    transform: translate(-50%); 
+    padding-left: 0;
+}
+
+.testimonial-slider .slick-dots li.slick-active{
     border-color: var(--brand);
     background: var(--brand);
     transform: scale(1.3);
 }
 
-.gallary-slider .slick-dots li:last-of-type{
+.testimonial-slider .slick-dots li:last-of-type{
     margin-right: 0;
 }
+/* ========================
+    testimonial css ends
+=========================== */
+
+/* ========================
+    membership css starts
+=========================== */
+
+#membership .membership-item .membership-header{
+    background: var(--bg1);
+}
+
+#membership .membership-item .membership-header h4{
+    color: var(--cl-dark);
+    line-height: 54px;
+}
+
+#membership .membership-item .membership-price .price-overlay{
+    background: var(--over8);
+}
+
+#membership .membership-item .mebership-features{
+    background: var(--bg2);
+}
+
+#membership .membership-item .mebership-features ul li{
+    color: var(--cl-t);
+}
+/* ========================
+    membership css ends
+=========================== */
 
 
-.icon a{
-    color: var(--brand);
-} */

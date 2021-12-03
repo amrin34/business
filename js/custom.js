@@ -20,8 +20,12 @@ $(document).ready(function(){
 
     $('.venobox').venobox(); 
 
+});
 
-
-
-
+//for testimonial-slider
+    
+$('.testimonial-slider').slick({
+    dots: true,
+    arrows: false,
+    slidesToShow: 2,
 });
