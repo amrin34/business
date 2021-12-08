@@ -630,6 +630,12 @@ gallary css  starts
 #membership .membership-item .membership-header h4{
     color: var(--cl-dark);
     line-height: 54px;
+    transition: all linear 0.4s;
+}
+
+#membership .membership-item:hover .membership-header h4{
+    background: var(--brand);
+    color: #fff;
 }
 
 #membership .membership-item .membership-price .price-overlay{
@@ -653,6 +659,12 @@ gallary css  starts
 #membership .membership-item .membership-btn a{
     background: var(--bg1);
     line-height: 34px;
+    transition: all linear 0.4s;
+}
+
+#membership .membership-item:hover .membership-btn a{
+    background: var(--brand);
+    color: #fff;
 }
 /* ========================
     membership css ends
@@ -814,16 +826,47 @@ footer::after{
     z-index: -1;
 }
 
+footer .footer-logo a img{
+    padding-top: 30px;
+    padding-bottom: 60px;
+}
+
+footer .footer-main{
+    position: relative;
+    padding-bottom: 30px;
+}
+
+footer .footer-main::before{
+    content: '';
+    width: 100%;
+    height: 1px;
+    background: #fff;
+    position: absolute;
+    left: 0;
+    top: -30px;
+}
+
+footer .footer-main::after{
+    content: '';
+    width: 100%;
+    height: 1px;
+    background: #fff;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+
 footer .footer-main .footer-item h5{
     margin-bottom: 30px !important;
 }
 
-footer .footer-main .footer-item li:last-child{
-    margin-bottom: 0;
-}
-
 footer .footer-main .footer-item .opening-hours li{
     margin-bottom: 10px;
+}
+
+footer .footer-main .footer-item .opening-hours li:last-child{
+    margin-bottom: 0;
 }
 
 footer .footer-main .footer-item .opening-hours li span{
@@ -836,7 +879,7 @@ footer .footer-main .footer-item .twitter-feed .twit-icon{
     font-size: 20px;
 }
 
-footer .footer-main .footer-item .twitter-feed .twit-icon li{
+footer .footer-main .footer-item .twitter-feed li{
     margin-bottom: 30px;
     padding-left: 30px;
 }
@@ -848,6 +891,42 @@ footer .footer-main .footer-item .flickr li{
 
 footer .footer-main .footer-item .flickr li img{
     width: 100%;
+}
+
+footer .footer-main .footer-item .footer-contact{
+    margin-bottom: 30px !important;
+}
+
+footer .footer-main .footer-item .footer-contact li{
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+footer .footer-main .footer-item .footer-contact li i{
+    color: var(--brand);
+}
+
+footer .footer-main .footer-item .footer-social .btn{
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    padding: 0 !important;
+    margin-right: 2px;
+}
+
+footer .footer-main .footer-item .footer-social .btn:hover{
+    background: var(--brand);
+    background-color: var(--brand);
+    color: #fff;
+}
+
+footer .footer-copy p{
+    line-height: 50px;
+}
+
+footer .footer-copy p a{
+    color: var(--brand);
 }
 /* ========================
     footer css ends
