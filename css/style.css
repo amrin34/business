@@ -806,10 +806,48 @@ footer{
 
 footer::after{
     content: '';
-    width: ;
-    height: ;
-    background: ;
-     
+    width: 100%;
+    height: 100%;
+    background: var(--fover);
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+}
+
+footer .footer-main .footer-item h5{
+    margin-bottom: 30px !important;
+}
+
+footer .footer-main .footer-item li:last-child{
+    margin-bottom: 0;
+}
+
+footer .footer-main .footer-item .opening-hours li{
+    margin-bottom: 10px;
+}
+
+footer .footer-main .footer-item .opening-hours li span{
+    display: inline-block;
+    width: 100px;
+}
+
+footer .footer-main .footer-item .twitter-feed .twit-icon{
+    color: var(--twitter);
+    font-size: 20px;
+}
+
+footer .footer-main .footer-item .twitter-feed .twit-icon li{
+    margin-bottom: 30px;
+    padding-left: 30px;
+}
+
+footer .footer-main .footer-item .flickr li{
+    width: 25%;
+    padding: 5px;
+}
+
+footer .footer-main .footer-item .flickr li img{
+    width: 100%;
 }
 /* ========================
     footer css ends
