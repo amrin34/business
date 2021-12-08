@@ -303,7 +303,11 @@ header h3{
     padding: 0 15px;
 }
 
-
+#banner .banner-item .banner-text a:hover{
+    border-color: var(--brand);
+    background: var(--brand);
+    color: #fff;
+}
 
 #banner .banner-item .banner-text a:first-of-type{
     margin-right: 26px;
@@ -361,15 +365,9 @@ header h3{
     background: var(--over6);
 }
 
-#about .about-video .about-overly i{
-    width: 48px;
-    height: 48px;
-    background: var(--brand);
-    color: var(--cl-dark);
-    font-size: 36px;
-    line-height: 48px;
-    text-align: center;
-    border-radius: 50%;
+#about .about-video .about-overly a i{
+    font-size: 56px;
+    color: var(--brand);
 }
 
 #about{
@@ -558,9 +556,9 @@ gallary css  starts
     z-index: -1;
 }
 
-#testimonial .testimonial-bg .testimonial-iteam{
+/* #testimonial .testimonial-bg .testimonial-iteam{
     margin-right: 30px;
-}
+} */
 
 #testimonial .testimonial-bg .testimonial-iteam .testimonial-parson-detail .ratings i{
     color: var(--brand);
@@ -789,7 +787,9 @@ gallary css  starts
     color: var(--cl-dark);
     transition: all linear 0.4s;
 }
-
+.brand-slider .prev-arrow:hover{
+    color: var(--brand);
+}
 .brand-slider .next-arrow{
     position: absolute;
     right: -30px;
@@ -801,6 +801,9 @@ gallary css  starts
     transition: all linear 0.4s;
 }
 
+.brand-slider .next-arrow:hover{
+    color: var(--brand);
+}
 
 /* ========================
     brand css ends
@@ -919,6 +922,7 @@ footer .footer-main .footer-item .footer-social .btn:hover{
     background: var(--brand);
     background-color: var(--brand);
     color: #fff;
+    border: var(--brand);
 }
 
 footer .footer-copy p{
